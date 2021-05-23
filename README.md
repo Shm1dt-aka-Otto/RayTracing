@@ -1,2 +1,2 @@
-# Monte-Carlo
+# RayTracing
 Проект для летней практики</br>
