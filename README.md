@@ -1,1 +1,2 @@
-# Monte-Karlo
+# Monte-Carlo
+Проект для летней практик</br>
