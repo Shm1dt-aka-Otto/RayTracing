@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\Lenovo\Desktop\C#\Ray Tracing\RayTracingDLL\dllmain.cpp(352,13): warning C4309: =: усечение константного значения
+C:\Users\Lenovo\Desktop\C#\Ray Tracing\RayTracingDLL\dllmain.cpp(365,9): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Lenovo\Desktop\C#\Ray Tracing\RayTracingDLL\dllmain.cpp(365,6): warning C4101: i: неиспользованная локальная переменная
+C:\Users\Lenovo\Desktop\C#\Ray Tracing\RayTracingDLL\dllmain.cpp(118): warning C4715: Vect::GetElem: значение возвращается не при всех путях выполнения
+     Создается библиотека C:\Users\Lenovo\Desktop\C#\Ray Tracing\Debug\RayTracingDLL.lib и объект C:\Users\Lenovo\Desktop\C#\Ray Tracing\Debug\RayTracingDLL.exp
+  RayTracingDLL.vcxproj -> C:\Users\Lenovo\Desktop\C#\Ray Tracing\Debug\RayTracingDLL.dll
