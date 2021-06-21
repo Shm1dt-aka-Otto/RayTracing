@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C0790D6D145648E7A19E323F5DE4D50C7C6510C0AE7CBEC946D6D31BCEB3DCBD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0AAAC079F7CC637BD69D0584197533F9F1E4BD23711E510AB029603E7659EB9C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6269f580-6a98-4e0a-9572-fcbcdc956952_1.0.0.0_x86__pthpn8nb9xcaa</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6269f580-6a98-4e0a-9572-fcbcdc956952_pthpn8nb9xcaa!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6269f580-6a98-4e0a-9572-fcbcdc956952</RegisteredPackageID>
@@ -30,21 +30,61 @@
     <AppXManifest Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-23T18:34:14.961</Modified>
+      <Modified>2021-06-21T19:31:55.394</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\Ray Tracing.exe">
       <PackagePath>entrypoint\Ray Tracing.exe</PackagePath>
-      <Modified>2021-05-23T18:34:13.716</Modified>
+      <Modified>2021-06-21T19:31:51.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-11-19T23:09:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\system.drawing.common\5.0.2\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2021-01-19T10:29:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2016-11-29T16:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+      <Modified>2021-02-12T03:40:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP.dll">
+      <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
+      <Modified>2021-02-12T03:39:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+      <Modified>2021-02-12T03:39:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+      <Modified>2021-02-12T03:39:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2016-11-29T16:58:38.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-01T18:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
+      <Modified>2021-02-11T18:08:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\bin_array_to_image_bmp_with_pal_log_dyn_name.exe">
+      <PackagePath>Assets\bin_array_to_image_bmp_with_pal_log_dyn_name.exe</PackagePath>
+      <Modified>2021-05-28T14:31:23.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\const.txt">
+      <PackagePath>Assets\const.txt</PackagePath>
+      <Modified>2021-06-07T05:39:24.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Example.png">
       <PackagePath>Assets\Example.png</PackagePath>
@@ -84,36 +124,149 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-05-23T15:13:26.391</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_36_08.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_36_08.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.316</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_36_22.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_36_22.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_36_33.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_36_33.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_36_46.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_36_46.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_37_01.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_37_01.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_37_16.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_37_16.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.430</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_37_30.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_37_30.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.445</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_37_43.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_37_43.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_37_56.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_37_56.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_38_07.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_38_07.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.516</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_38_20.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_38_20.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.532</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_13_01_38_31.bmp">
+      <PackagePath>Assets\Image\2021_06_13_01_38_31.bmp</PackagePath>
+      <Modified>2021-06-15T01:10:17.554</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_21_16_06_11.bmp">
+      <PackagePath>Assets\Image\2021_06_21_16_06_11.bmp</PackagePath>
+      <Modified>2021-06-21T06:08:24.981</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_21_16_41_47.bmp">
+      <PackagePath>Assets\Image\2021_06_21_16_41_47.bmp</PackagePath>
+      <Modified>2021-06-21T06:41:57.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Assets\Image\2021_06_21_17_48_07.bmp">
+      <PackagePath>Assets\Image\2021_06_21_17_48_07.bmp</PackagePath>
+      <Modified>2021-06-21T07:48:14.251</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2021-05-23T16:00:53.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\Ray Tracing.xr.xml">
       <PackagePath>Ray Tracing.xr.xml</PackagePath>
-      <Modified>2021-05-23T18:10:59.086</Modified>
+      <Modified>2021-06-15T07:57:12.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-23T18:32:05.289</Modified>
+      <Modified>2021-06-21T19:31:51.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-23T18:34:13.538</Modified>
+      <Modified>2021-06-21T19:31:51.672</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2020-12-01T18:59:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-01T16:52:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2020-07-09T14:07:08.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-23T18:34:13.976</Modified>
+      <Modified>2021-06-21T07:48:48.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\C#\Ray Tracing\Ray Tracing\bin\x86\Debug\Core\Ray Tracing.exe">
       <PackagePath>Ray Tracing.exe</PackagePath>
-      <Modified>2021-05-23T18:34:14.950</Modified>
+      <Modified>2021-06-21T19:31:55.359</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Lenovo\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>

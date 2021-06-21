@@ -1,0 +1,15 @@
+200 - height
+400 - width
+0.00 - min_value
+0.018 - max_value
+0 - color  (0 - gray, 1 - yellow)
+1 - legenda		//шкала
+1 - axes		//оси
+-80 - x_min
+80 - x_max
+0 - y_min
+80 - y_max
+10 - x_step		//шкала по х
+20 - y_step		//шкала по х
+0 - log scale	//логарифмическая шкала
+42 - base of log

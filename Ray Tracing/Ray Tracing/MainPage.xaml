@@ -5,6 +5,7 @@
     xmlns:local="using:Ray_Tracing"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -21,13 +22,67 @@
            >
         <SplitView.Pane>
             <RelativePanel Background="#A9A9A9" Margin="3, 0, 0, 0">
-                <TextBlock x:Name="xBlock" Text="Задать значение x:" RelativePanel.AlignLeftWithPanel="True"
-                           Height="30" FontSize="20"/>
-                <TextBox x:Name="xValue" RelativePanel.RightOf="xBlock" RelativePanel.AlignRightWithPanel="True"/>
-                <TextBlock x:Name="yBlock" Text="Задать значение y:" RelativePanel.AlignLeftWithPanel="True"
+                <TextBlock x:Name="xBlock" Text="Задать ширину поля:" RelativePanel.AlignLeftWithPanel="True"
+                           Height="30" FontSize="20" AutomationProperties.HelpText=""/>
+                <TextBox x:Name="xValue" RelativePanel.RightOf="xBlock" RelativePanel.AlignRightWithPanel="True" Height="29" Width="173"
+                         TextChanging="ValueTextChanging" Text="400" LostFocus="ValueLostFocus"/>
+                <TextBlock x:Name="yBlock" Text="Задать  длину   поля:" RelativePanel.AlignLeftWithPanel="True"
                            RelativePanel.Below="xBlock" Height="30" FontSize="20"/>
                 <TextBox x:Name="yValue" RelativePanel.RightOf="yBlock" RelativePanel.AlignRightWithPanel="True"
-                         RelativePanel.Below="xValue"/>
+                         RelativePanel.Below="xValue" TextChanging="ValueTextChanging" Text="200" LosingFocus="ValueLostFocus" Width="175"/>
+                <Button x:Name="setSpace" Height="32" RelativePanel.Below="yBlock" Width="316" Content="Создать график"
+                        FontSize="15" Click="setSpace_Click"/>
+                <TextBlock x:Name="LBlock" Text="Количество  траекторий:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="setSpace" Height="32" FontSize="20"/>
+                <TextBox x:Name="LValue" RelativePanel.RightOf="LBlock" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="setSpace" Width="88" TextChanging="ValueTextChanging" Text="200"
+                         LostFocus="ValueLostFocus"/>
+                <TextBlock x:Name="SBlock" Text="Число  актов  рассеяния:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="LBlock" Height="32" FontSize="20"/>
+                <TextBox x:Name="SValue" RelativePanel.RightOf="SBlock" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="LValue" TextChanging="ValueTextChanging" Text="12" LostFocus="ValueLostFocus"/>
+                <TextBlock x:Name="sigmaBlock" Text="Постоянный множитель:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="SBlock" Height="32" FontSize="20"/>
+                <TextBox x:Name="sigmaValue" RelativePanel.RightOf="sigmaBlock" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="SValue" TextChanging="ValueTextChanging" Text="5" LostFocus="ValueLostFocus"/>
+                <TextBlock x:Name="hBlock" Text="Задать   шаг   [0,1 — 0,4]:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="sigmaBlock" Height="32" FontSize="20"/>
+                <ComboBox x:Name="hValue" RelativePanel.RightOf="hBlock" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="sigmaValue" Width="90" SelectedIndex="3">
+                    <x:String>0,1</x:String>
+                    <x:String>0,2</x:String>
+                    <x:String>0,3</x:String>
+                    <x:String>0,4</x:String>
+                </ComboBox>
+                <TextBlock x:Name="cBlock" Text="Среда распространения звука:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="hBlock" RelativePanel.AlignRightWithPanel="True" 
+                           Height="32" FontSize="20" Width="285"/>
+                <RadioButton x:Name="freshWater" Content="Пресная вода" RelativePanel.Below="cBlock"
+                             Click="freshWater_Click"/>
+                <RadioButton x:Name="saltWater" Content="Соленая вода" RelativePanel.Below="cBlock"
+                             RelativePanel.RightOf="freshWater" Click="saltWater_Click" IsChecked="True"/>
+                <RadioButton x:Name="Air" Content="Воздух" RelativePanel.Below="cBlock"
+                             RelativePanel.RightOf="saltWater" Width="77" Click="Air_Click"/>
+                <Button x:Name="setParam" Height="32" RelativePanel.Below="freshWater" Width="316" Content="Задать параметры"
+                        FontSize="15" Click="setParam_Click" IsEnabled="False"/>
+                <TextBlock x:Name="xCircle" Text="X координата круга:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="setParam" Height="32" FontSize="20"/>
+                <TextBox x:Name="xValueCircle" RelativePanel.RightOf="xCircle"
+                         RelativePanel.Below="setParam" TextChanging="ValueTextChanging" Text="5" LostFocus="ValueLostFocus" Width="103"/>
+                <Button x:Name="minusDegree" Content="-" RelativePanel.RightOf="xValueCircle" RelativePanel.Below="setParam" Width="28"
+                        Click="minusDegree_Click"/>
+                <TextBlock x:Name="yCircle" Text="Y координата круга:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="xCircle" Height="32" FontSize="20"/>
+                <TextBox x:Name="yValueCircle" RelativePanel.RightOf="yCircle" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="xValueCircle" TextChanging="ValueTextChanging" Text="5" LostFocus="ValueLostFocus"/>
+                <TextBlock x:Name="dCircle" Text="Диаметр круга:" RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.Below="yCircle" Height="32" FontSize="20"/>
+                <TextBox x:Name="dValueCircle" RelativePanel.RightOf="dCircle" RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.Below="yValueCircle" TextChanging="ValueTextChanging" Text="5" LostFocus="ValueLostFocus"/>
+                <Button x:Name="Draw" Height="33" RelativePanel.Below="dCircle" Width="316" Content="Нарисовать круг"
+                        FontSize="15" Click="Draw_Click"/>
+                <Button x:Name="Progress" Height="33" RelativePanel.Below="Draw" Width="316" Content="Запуск"
+                        FontSize="15" Click="Progress_Click"/>
             </RelativePanel>
         </SplitView.Pane>
         <Grid>
@@ -36,17 +91,37 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
+            <Grid x:Name="Graphics" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Canvas x:Name="Graph" Background="Gray" PointerMoved="Grid_PointerMoved" Grid.Column="0"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ProgressRing x:Name="ProgressRing" Width="60" Height="60"/>
+                    <TextBlock x:Name="ProgressScope" Text="Обработка" Visibility="Collapsed"/>
+                </StackPanel>
+            </Grid>
             <RelativePanel Grid.Row="0" Background="#A9A9A9">
-                <AppBarButton Click="ToogleSettings" Icon="Setting" Label="Настройки" Height="50"
+                <AppBarButton x:Name="Settings" Click="ToogleSettings" Icon="Setting" Label="Настройки" Height="50"
                           Style="{StaticResource ButtonStyle}" Margin="0,0,0,0" Width="75"
                               RelativePanel.AlignLeftWithPanel="True"/>
+                <AppBarButton x:Name="CurParam" Icon="List"  Label="Сводка" Height="50" Style="{StaticResource ButtonStyle}"
+                              Width="75" Margin="75,0,0,0" Click="ToogleParameters" IsEnabled="False"/>
+                <AppBarButton x:Name="Save" Icon="Pictures"  Label="Сохранить" Height="50" Style="{StaticResource ButtonStyle}"
+                              Width="75" Margin="150,0,0,0" IsEnabled="False"/>
+                <AppBarButton x:Name="Cancel" Icon="Remove" Label="Отмена" Height="50" Style="{StaticResource ButtonStyle}"
+                              Width="75" Margin="225,0,0,0" Click="Cancel_Click" IsEnabled="False"/>
+                <AppBarButton x:Name="History" Icon="Refresh"  Label="История" Height="50" Style="{StaticResource ButtonStyle}"
+                              Width="75" Margin="300,0,0,0" Click="History_Click"/>
             </RelativePanel>
-            <Image x:Name="Graph" Grid.Row="1" Source="/Assets/Example.png" Stretch="Fill"/>
             <RelativePanel Grid.Row="2" Background="#A9A9A9">
-                <TextBlock x:Name="Coordinates" Text="Текущие координаты: x,y" FontFamily="Verdana"
-                           FontSize="15" Height="20" TextAlignment="End" RelativePanel.AlignLeftWithPanel="True"/>
+                <TextBlock x:Name="Coordinates" Text="Текущие координаты: {0 0}" FontFamily="Verdana"
+                           FontSize="15" Height="20" TextAlignment="Start" RelativePanel.AlignLeftWithPanel="True" Width="292"/>
                 <TextBlock x:Name="Time" Text="Текущая сессия: 00:00:00" FontFamily="Verdana" 
-                           FontSize="15" Height="20" TextAlignment="Start" RelativePanel.AlignRightWithPanel="True"/>
+                           FontSize="15" Height="20" TextAlignment="End" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock x:Name="Scatter" Text="Количество актов рассеяния: 12" RelativePanel.AlignBottomWithPanel="True"
+                           FontSize="15" Height="20" TextAlignment="Center" RelativePanel.RightOf="Coordinates"
+                           RelativePanel.LeftOf="Time"/>
             </RelativePanel>
         </Grid>
     </SplitView>
